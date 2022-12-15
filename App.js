@@ -1,20 +1,28 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+import { Button, Text, View } from 'react-native';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+
+
+
+  return (<View style={{flex:1}}>
+
+    <View style={{
+      flex:1, 
+      backgroundColor:'tomato', 
+      justifyContent:'center', 
+      alignItems:'center'}}>
+
+        <Text style={{color:'white', fontSize:40}}>Çağatay</Text>
+        
     </View>
-  );
+    <View style={{flex:3, backgroundColor:'black'}}>2</View>
+
+  </View>);
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+//View - div
+// text - p, span
+
+//margin, padding, flex**, 
