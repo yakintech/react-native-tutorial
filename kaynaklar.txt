@@ -1,0 +1,2 @@
+https://medium.com/@Devsteam.mobi/a-quick-performance-comparison-of-styled-components-vs-inline-styles-in-react-native-3125ae603d45
+https://medium.com/batech/react-native-performans-i%CC%87pu%C3%A7lar%C4%B1-1-4c3c8f784fb6
