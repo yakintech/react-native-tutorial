@@ -1,7 +1,8 @@
-import { View, Text, FlatList } from 'react-native'
+import { View, Text, SectionList } from 'react-native'
 import React from 'react'
 
-const FlatListSample = () => {
+
+const SectionListSample = () => {
 
     const products = [
         {
@@ -937,26 +938,40 @@ const FlatListSample = () => {
         }
     ]
 
-    return (
-        <View>
-            <FlatList
-                data={products}
-                renderItem={productItem}
-                
-            />
-        </View>
+    let data = [];
+
+    products.forEach(item => {
+
+        let sectionItem = data.find(q => q.title == item.categoryId);
+
+        if (sectionItem) {
+            sectionItem.data.push(item.name);
+        }
+        else {
+            let itemSample = {
+                title: item.categoryId,
+                data: [item.name]
+            }
+            data.push(itemSample);
+        }
+
+    })
+
+    return (<>
+        <SectionList
+            sections={data}
+            renderItem={productItem}
+            renderSectionHeader={({ section: { title } }) => (
+                <Text style={{fontSize:35}}>{title}</Text>
+              )}
+        />
+    </>
     )
 }
 
 
 const productItem = ({ item }) => {
-    console.log('Hello');
-    if (item.supplierId == 2) {
-        return <Text style={{ fontSize: 35, backgroundColor:'red' }}>{item.name}</Text>
-    }
-    else {
-        return <Text style={{ fontSize: 35, backgroundColor:'yellow' }}>{item.name}</Text>
-    }
+    return <Text>{item}</Text>
 }
 
-export default FlatListSample
+export default SectionListSample

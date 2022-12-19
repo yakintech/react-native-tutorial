@@ -1,6 +1,8 @@
 
 import { Text, View, StyleSheet } from 'react-native';
 import Core from './core-components/Core';
+import FlatListSample from './core-components/FlatListSample';
+import SectionListSample from './core-components/SectionListSample';
 
 export default function App() {
 
@@ -39,7 +41,8 @@ export default function App() {
   }
 
   return (<>
-    <Core/>
+    {/* <FlatListSample /> */}
+    <SectionListSample/>
 
   </>);
 
