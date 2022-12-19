@@ -1,8 +1,7 @@
 
 import { Text, View, StyleSheet } from 'react-native';
-import UserDetail from './jsxSample/UserDetail';
-import Box from './templateSample/Box';
-import Header from './templateSample/Header';
+import Core from './core-components/Core';
+
 export default function App() {
 
 
@@ -29,32 +28,20 @@ export default function App() {
     }
   ]
 
-  return (<View style={{ flex: 1, padding: '5%' }}>
+  //string, number, object, array, FUNCTION!!
 
-    <UserDetail />
-    <Header />
+  const orderFinish = () => {
+    alert('Finish Order');
+  }
 
-    <View style={styles.title}>
-      <Text>Learn</Text>
-      <Text>Choose the part of the body</Text>
-    </View>
+  const showText = (text) => {
+    alert(text);
+  }
 
-    {/* <Box color='#8DC3BB' title='Head and Face' description='11 diseases'></Box>
-    <Box color='#EB7562' title='Back and Neck' description='9 diseases'></Box>
-    <Box color='#F1982E' title='Elbow and Shoulders' description='12 diseases'></Box>
-    <Box color='#317389' title='Hand and Arm' description='2 diseases'></Box> */}
+  return (<>
+    <Core/>
 
-    {
-      boxes.map(item =>
-        <Box
-          title={item.title}
-          description={item.description}
-          color={item.color}></Box>
-      )
-    }
-
-
-  </View>);
+  </>);
 
 }
 
