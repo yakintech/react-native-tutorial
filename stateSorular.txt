@@ -4,9 +4,6 @@
 
 3) Ekranda bir text bir button var. Butona tıklandığında text fontSize random değer atasın.
 
-4) Country ekranda listele.
-
-https://gist.github.com/incredimike/1469814
 
 4) Ekranda cities dizisiyle dolu bir text listesi ve bir buton var. Butona bastığında liste TERSTEN sıralansın.
 
