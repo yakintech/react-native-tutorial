@@ -7,6 +7,7 @@ import StateSample from './stateSample/StateSample';
 import StateSample2 from './stateSample/StateSample2';
 import StateSample3 from './stateSample/StateSample3';
 import StateSample4 from './stateSample/StateSample4';
+import StateSample5 from './stateSample/StateSample5';
 
 export default function App() {
 
@@ -50,7 +51,8 @@ export default function App() {
     {/* <StateSample/> */}
     {/* <StateSample2/> */}
     {/* <StateSample3/> */}
-    <StateSample4/>
+    {/* <StateSample4/> */}
+    <StateSample5/>
 
   </>);
 

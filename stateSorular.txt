@@ -1,0 +1,13 @@
+1) Ekranda bir text bir button var. Butona tıklandığında text içerisindeki counter ikişerli artsın.
+
+2) Ekranda bir text bir button var. Butona tıklandığında text içerisindeki countera random değer atasın.
+
+3) Ekranda bir text bir button var. Butona tıklandığında text fontSize random değer atasın.
+
+4) Country ekranda listele.
+
+https://gist.github.com/incredimike/1469814
+
+4) Ekranda cities dizisiyle dolu bir text listesi ve bir buton var. Butona bastığında liste TERSTEN sıralansın.
+
+5) Ekranda cities dizisiyle dolu bir text listesi ve bir buton var. Butona bastığında listede sadece 'a' harfi ile başlayan şehirler sıralansın.
