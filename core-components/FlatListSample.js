@@ -942,7 +942,6 @@ const FlatListSample = () => {
             <FlatList
                 data={products}
                 renderItem={productItem}
-                
             />
         </View>
     )
@@ -950,7 +949,6 @@ const FlatListSample = () => {
 
 
 const productItem = ({ item }) => {
-    console.log('Hello');
     if (item.supplierId == 2) {
         return <Text style={{ fontSize: 35, backgroundColor:'red' }}>{item.name}</Text>
     }

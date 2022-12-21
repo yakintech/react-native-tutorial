@@ -3,6 +3,10 @@ import { Text, View, StyleSheet } from 'react-native';
 import Core from './core-components/Core';
 import FlatListSample from './core-components/FlatListSample';
 import SectionListSample from './core-components/SectionListSample';
+import StateSample from './stateSample/StateSample';
+import StateSample2 from './stateSample/StateSample2';
+import StateSample3 from './stateSample/StateSample3';
+import StateSample4 from './stateSample/StateSample4';
 
 export default function App() {
 
@@ -42,7 +46,11 @@ export default function App() {
 
   return (<>
     {/* <FlatListSample /> */}
-    <SectionListSample/>
+    {/* <SectionListSample/> */}
+    {/* <StateSample/> */}
+    {/* <StateSample2/> */}
+    {/* <StateSample3/> */}
+    <StateSample4/>
 
   </>);
 
