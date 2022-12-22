@@ -3,11 +3,13 @@ import { Text, View, StyleSheet } from 'react-native';
 import Core from './core-components/Core';
 import FlatListSample from './core-components/FlatListSample';
 import SectionListSample from './core-components/SectionListSample';
+import StateInput from './stateSample/StateInput';
 import StateSample from './stateSample/StateSample';
 import StateSample2 from './stateSample/StateSample2';
 import StateSample3 from './stateSample/StateSample3';
 import StateSample4 from './stateSample/StateSample4';
 import StateSample5 from './stateSample/StateSample5';
+import StateSample6 from './stateSample/StateSample6';
 
 export default function App() {
 
@@ -45,16 +47,17 @@ export default function App() {
     alert(text);
   }
 
-  return (<>
+  return (<View style={{flex:1}}>
     {/* <FlatListSample /> */}
     {/* <SectionListSample/> */}
     {/* <StateSample/> */}
     {/* <StateSample2/> */}
     {/* <StateSample3/> */}
     {/* <StateSample4/> */}
-    <StateSample5/>
-
-  </>);
+    {/* <StateSample5/> */}
+    {/* <StateSample6/> */}
+    <StateInput/>
+  </View>);
 
 }
 
