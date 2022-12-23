@@ -3,6 +3,9 @@ import { Text, View, StyleSheet } from 'react-native';
 import Core from './core-components/Core';
 import FlatListSample from './core-components/FlatListSample';
 import SectionListSample from './core-components/SectionListSample';
+import EffectFetchSample from './effectSample/EffectFetchSample';
+import EffectFetchSample2 from './effectSample/EffectFetchSample2';
+import EffectSample from './effectSample/EffectSample';
 import StateInput from './stateSample/StateInput';
 import StateSample from './stateSample/StateSample';
 import StateSample2 from './stateSample/StateSample2';
@@ -10,6 +13,7 @@ import StateSample3 from './stateSample/StateSample3';
 import StateSample4 from './stateSample/StateSample4';
 import StateSample5 from './stateSample/StateSample5';
 import StateSample6 from './stateSample/StateSample6';
+import StateSample7 from './stateSample/StateSample7';
 
 export default function App() {
 
@@ -56,7 +60,11 @@ export default function App() {
     {/* <StateSample4/> */}
     {/* <StateSample5/> */}
     {/* <StateSample6/> */}
-    <StateInput/>
+    {/* <StateInput/> */}
+    {/* <StateSample7/> */}
+    {/* <EffectSample/> */}
+    {/* <EffectFetchSample/> */}
+    <EffectFetchSample2/>
   </View>);
 
 }
